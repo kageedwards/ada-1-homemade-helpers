@@ -1,5 +1,8 @@
 def sum(my_collection):
-    pass
+    total = 0
+    for n in my_collection:
+        total+= n
+    return total
 
 def test_sum_empty_list():
     assert sum([]) == 0

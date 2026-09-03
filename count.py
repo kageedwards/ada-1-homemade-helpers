@@ -1,5 +1,12 @@
 def count(my_collection, target):
-    pass
+    if not my_collection:
+        return None
+    
+    counter =0
+    for n in my_collection:
+        if n == target:
+            counter+=1
+    return counter
     
 
 def test_count_empty_list():
